@@ -30,8 +30,8 @@ Remote repository  // Provides the destination for the pushed commits.
 ### Representation
 
 ```powershell
-& "$env:LOCALAPPDATA\Programs\Git\cmd\git.exe" add .
+& "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\cmd\git.exe" add .
 
-& "$env:LOCALAPPDATA\Programs\Git\cmd\git.exe" commit -m "Update programming library"
+& "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\cmd\git.exe" commit -m "Update programming library"
 
-& "$env:LOCALAPPDATA\Programs\Git\cmd\git.exe" push
+& "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\Git\cmd\git.exe" push
