@@ -5,3 +5,10 @@
 - Assign Value
 - Deduce Type
 - Access Path
+- Represent
+- Stage
+- Commit
+- Push
+- Display Status
+- Clone
+- List

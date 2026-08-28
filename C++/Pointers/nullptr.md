@@ -1,10 +1,10 @@
 # nullptr
 
-**Concept:** `C++`
+**Concept:** C++
 **Action:** Assign Value
 **Object:** `nullptr`
 **Classification:** Null Pointer Literal
-**Environment:** Any `C++11` or later compiler
+**Environment:** Any C++11 or later compiler
 **Path Type:** N/A
 
 ---

@@ -1,10 +1,10 @@
 # string
 
-**Concept:** `C++`
+**Concept:** C++
 **Action:** Declare
 **Object:** `std::string`
 **Classification:** Data Type
-**Environment:** Any `C++` compiler
+**Environment:** Any C++ compiler
 **Path Type:** N/A
 
 ---

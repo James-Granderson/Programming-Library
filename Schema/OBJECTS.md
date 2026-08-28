@@ -1,9 +1,10 @@
 # Objects (reference list, not exhaustive — check before renaming an existing concept)
 - char
-- * (dereference)
+- *
 - NULL
-- define
+- #define
 - macro
+- Null Pointer
 - null-pointer
 - std::string
 - std::vector
@@ -11,3 +12,9 @@
 - nullptr
 - auto
 - $env:LOCALAPPDATA
+- git add
+- git commit
+- git push
+- git status
+- Repository
+- Get-ChildItem

@@ -3,9 +3,14 @@
 - Unary Operator
 - Macro
 - Preprocessor Directive
+- Preprocessor Construct
 - Class Construct
 - Null Pointer Literal
 - Null Pointer
+- Pointer Concept
 - Type Deduction Specifier
 - Container
 - Environment Variable
+- Command
+- How-To
+- Cmdlet

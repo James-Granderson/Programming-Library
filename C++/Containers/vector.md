@@ -1,10 +1,10 @@
 # vector
 
-**Concept:** `C++`
+**Concept:** C++
 **Action:** Declare
 **Object:** `std::vector`
 **Classification:** Container
-**Environment:** Any `C++` compiler
+**Environment:** Any C++ compiler
 **Path Type:** N/A
 
 ---

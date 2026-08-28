@@ -1,11 +1,11 @@
 # Clone Repository
 
-**Concept:** `PowerShell`
+**Concept:** PowerShell
 **Action:** Clone
 **Object:** Repository
 **Classification:** How-To
-**Environment:** `PowerShell`
-**Path Type:** Absolute Path
+**Environment:** PowerShell
+**Path Type:** Absolute
 **Tags:** command
 
 ---

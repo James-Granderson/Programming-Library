@@ -1,10 +1,10 @@
 # auto
 
-**Concept:** `C++`
+**Concept:** C++
 **Action:** Deduce Type
 **Object:** `auto`
 **Classification:** Type Deduction Specifier
-**Environment:** Any `C++11` or later compiler
+**Environment:** Any C++11 or later compiler
 **Path Type:** N/A
 
 ---
