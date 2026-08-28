@@ -1,0 +1,11 @@
+# Classifications
+- Data Type
+- Unary Operator
+- Macro
+- Preprocessor Directive
+- Class Construct
+- Null Pointer Literal
+- Null Pointer
+- Type Deduction Specifier
+- Container
+- Environment Variable

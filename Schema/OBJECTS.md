@@ -1,0 +1,13 @@
+# Objects (reference list, not exhaustive — check before renaming an existing concept)
+- char
+- * (dereference)
+- NULL
+- define
+- macro
+- null-pointer
+- std::string
+- std::vector
+- class
+- nullptr
+- auto
+- $env:LOCALAPPDATA
