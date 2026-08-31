@@ -5,7 +5,8 @@
 **Object:** `NULL`  
 **Classification:** Macro  
 **Environment:** Any C compiler  
-**Path Type:** N/A  
+**Path Type:** N/A
+**Tags:** expression
 
 ---
 

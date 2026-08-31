@@ -5,7 +5,8 @@
 **Object:** `*`  
 **Classification:** Unary Operator  
 **Environment:** Any C compiler  
-**Path Type:** N/A  
+**Path Type:** N/A
+**Tags:** operator
 
 ---
 

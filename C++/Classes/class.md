@@ -1,11 +1,12 @@
 # class
 
-**Concept:** C++
+**Concept:** `C++`
 **Action:** Define
 **Object:** `class`
 **Classification:** Class Construct
-**Environment:** Any C++ compiler
+**Environment:** Any `C++` compiler
 **Path Type:** N/A
+**Tags:** keyword
 
 ---
 

@@ -12,3 +12,27 @@
 - Display Status
 - Clone
 - List
+- Query
+- Filter
+- Insert
+- Update
+- Delete
+- Sort
+- Combine
+- Reference
+- Address
+- Measure
+- Branch
+- Iterate
+- Return
+- Create
+- Allocate
+- Deallocate
+- Include
+- Print
+- Format
+- Evaluate
+- Store
+- Traverse
+- Search
+- Pop

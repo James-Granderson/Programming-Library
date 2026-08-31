@@ -1,20 +1,90 @@
-# Objects (reference list, not exhaustive — check before renaming an existing concept)
-- char
-- *
-- NULL
-- #define
-- macro
-- Null Pointer
-- null-pointer
-- std::string
-- std::vector
-- class
-- nullptr
-- auto
-- $env:LOCALAPPDATA
-- git add
-- git commit
-- git push
-- git status
-- Repository
-- Get-ChildItem
+# Objects
+
+Reference list of objects across the library, with their Concept-qualified
+key(s). Most objects have exactly one key. When the same name appears under
+more than one Concept, list every key so it's unambiguous which entry a
+lookup means.
+
+- #define — C/#define
+- * — C/*
+- char — C/char
+- int — C/int
+- signed int — C/signed int
+- Array — C/Array
+- Format String — C/Format String
+- Arithmetic Expression — C/Arithmetic Expression
+- Comparison Expression — C/Comparison Expression
+- Logical Expression — C/Logical Expression
+- Assignment Expression — C/Assignment Expression
+- Function Call Expression — C/Function Call Expression
+- Conditional Expression — C/Conditional Expression
+- main — C/main
+- Global Scope — C/Global Scope
+- Local Scope — C/Local Scope
+- macro — C/macro
+- NULL — C/NULL, SQL/NULL
+- Null Pointer — C/Null Pointer
+- struct — C/struct
+- float — C/float
+- double — C/double
+- void — C/void
+- enum — C/enum
+- Pointer — C/Pointer
+- sizeof — C/sizeof
+- & — C/&
+- if — C/if
+- for — C/for
+- return — C/return
+- Create A Linked List — C/Create A Linked List
+- Create A Doubly Linked List — C/Create A Doubly Linked List
+- malloc — C/malloc
+- free — C/free
+- printf — C/printf
+- printf Format Specifier Catalog — C/printf Format Specifier Catalog
+- stdio.h — C/stdio.h
+- stdlib.h — C/stdlib.h
+- Create A Hash Table — C/Create A Hash Table
+- Perform Depth-First Search — C/Perform Depth-First Search
+- auto — `C++`/auto
+- class — `C++`/class
+- nullptr — `C++`/nullptr
+- std::string — `C++`/std::string
+- std::vector — `C++`/std::vector
+- git add — Git/git add
+- git commit — Git/git commit
+- git push — Git/git push
+- git status — Git/git status
+- $env:LOCALAPPDATA — PowerShell/$env:LOCALAPPDATA
+- Get-ChildItem — PowerShell/Get-ChildItem
+- Repository — PowerShell/Repository
+- CREATE TABLE — SQL/CREATE TABLE
+- DELETE — SQL/DELETE
+- FROM — SQL/FROM
+- INSERT — SQL/INSERT
+- INT — SQL/INT
+- JOIN — SQL/JOIN
+- ORDER BY — SQL/ORDER BY
+- PRIMARY KEY — SQL/PRIMARY KEY
+- SELECT — SQL/SELECT
+- UPDATE — SQL/UPDATE
+- VARCHAR — SQL/VARCHAR
+- WHERE — SQL/WHERE
+- Hash Table — Data Structures/Hash Table
+- Stack — Data Structures/Stack
+- Queue — Data Structures/Queue
+- Linked List — Data Structures/Linked List
+- Doubly Linked List — Data Structures/Doubly Linked List
+- Tree — Data Structures/Tree
+- Binary Search Tree — Data Structures/Binary Search Tree
+- Heap — Data Structures/Heap
+- Depth-First Search — Algorithms/Depth-First Search
+- Binary Search — Algorithms/Binary Search
+- Heap Sort — Algorithms/Heap Sort
+- Create A Stack — C/Create A Stack
+- Push Onto A Stack — C/Push Onto A Stack
+- Pop From A Stack — C/Pop From A Stack
+- Create A Queue — C/Create A Queue
+- Create A Binary Search Tree — C/Create A Binary Search Tree
+- Create A Heap — C/Create A Heap
+- Perform Binary Search — C/Perform Binary Search
+- Perform Heap Sort — C/Perform Heap Sort

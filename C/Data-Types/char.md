@@ -5,7 +5,8 @@
 **Object:** `char`  
 **Classification:** Data Type  
 **Environment:** Any C compiler  
-**Path Type:** N/A  
+**Path Type:** N/A
+**Tags:** keyword  
 
 ---
 
