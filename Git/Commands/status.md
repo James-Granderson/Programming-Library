@@ -1,4 +1,4 @@
-# status
+# `git status`
 
 **Concept:** Git
 **Action:** Display Status
@@ -7,6 +7,7 @@
 **Environment:** Git
 **Path Type:** N/A
 **Tags:** command
+---
 
 ---
 

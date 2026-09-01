@@ -1,4 +1,4 @@
-# null
+# `NULL`
 
 **Concept:** SQL
 **Action:** Represent
@@ -7,6 +7,7 @@
 **Environment:** Any SQL database
 **Path Type:** N/A
 **Tags:** keyword, expression
+---
 
 ---
 

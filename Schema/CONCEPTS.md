@@ -7,3 +7,4 @@
 - SQL
 - Data Structures
 - Algorithms
+- Shell

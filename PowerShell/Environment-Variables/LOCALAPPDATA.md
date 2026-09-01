@@ -1,4 +1,4 @@
-# LOCALAPPDATA
+# `$env:LOCALAPPDATA`
 
 **Concept:** PowerShell
 **Action:** Access Path
@@ -7,6 +7,7 @@
 **Environment:** PowerShell
 **Path Type:** Local Application Data
 **Tags:** environment-variable
+---
 
 ---
 

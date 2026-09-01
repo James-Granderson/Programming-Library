@@ -1,4 +1,4 @@
-# Get-ChildItem
+# `Get-ChildItem`
 
 **Concept:** PowerShell
 **Action:** List
@@ -7,6 +7,7 @@
 **Environment:** PowerShell
 **Path Type:** N/A
 **Tags:** cmdlet
+---
 
 ---
 

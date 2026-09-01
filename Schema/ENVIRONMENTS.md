@@ -6,3 +6,4 @@
 - Git
 - Any SQL database
 - Language-independent
+- Shell

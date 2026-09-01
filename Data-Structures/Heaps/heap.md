@@ -1,4 +1,4 @@
-# heap
+# `Heap`
 
 **Concept:** Data Structures
 **Action:** Store
@@ -21,3 +21,14 @@ Makes the highest- or lowest-priority value available at the root.
 ### How to Use
 
 Store the tree in an array and restore the heap property after insertion or removal.
+
+### Representation
+
+```
+Array: [10, 8, 9, 4, 7, 5]
+
+Parent(i) = (i - 1) / 2
+Left(i)   = 2i + 1
+Right(i)  = 2i + 2
+```
+

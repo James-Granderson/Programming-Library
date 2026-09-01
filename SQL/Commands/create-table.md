@@ -1,4 +1,4 @@
-# create-table
+# `CREATE TABLE`
 
 **Concept:** SQL
 **Action:** Define
@@ -7,6 +7,7 @@
 **Environment:** Any SQL database
 **Path Type:** N/A
 **Tags:** keyword
+---
 
 ---
 
@@ -34,3 +35,4 @@ CREATE TABLE users (
     name VARCHAR(50)
 );
 ```
+

@@ -1,4 +1,4 @@
-# nullptr
+# `nullptr`
 
 **Concept:** `C++`
 **Action:** Assign Value
@@ -7,6 +7,7 @@
 **Environment:** Any `C++11` or later compiler
 **Path Type:** N/A
 **Tags:** keyword, expression
+---
 
 ---
 

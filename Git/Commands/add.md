@@ -1,12 +1,13 @@
-# add
+# `git add`
 
-**Concept:** Git  
-**Action:** Stage  
-**Object:** `git add`  
-**Classification:** Command  
-**Environment:** Git  
-**Path Type:** N/A  
-**Tags:** command  
+**Concept:** Git
+**Action:** Stage
+**Object:** `git add`
+**Classification:** Command
+**Environment:** Git
+**Path Type:** N/A
+**Tags:** command
+---
 
 ---
 

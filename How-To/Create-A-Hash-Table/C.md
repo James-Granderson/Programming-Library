@@ -1,4 +1,4 @@
-# Create A Hash Table
+# `Create A Hash Table`
 
 **Concept:** C
 **Action:** Create
@@ -7,6 +7,7 @@
 **Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** procedure
+---
 
 ---
 

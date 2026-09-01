@@ -1,12 +1,13 @@
-# dereference
+# `*`
 
-**Concept:** C  
-**Action:** Dereference  
-**Object:** `*`  
-**Classification:** Unary Operator  
-**Environment:** Any C compiler  
+**Concept:** C
+**Action:** Dereference
+**Object:** `*`
+**Classification:** Unary Operator
+**Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** operator
+---
 
 ---
 

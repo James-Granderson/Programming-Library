@@ -1,4 +1,4 @@
-# free
+# `free`
 
 **Concept:** C
 **Action:** Deallocate
@@ -7,6 +7,7 @@
 **Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** function
+---
 
 ---
 

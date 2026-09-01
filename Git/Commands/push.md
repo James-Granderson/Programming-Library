@@ -1,12 +1,13 @@
-# push
+# `git push`
 
-**Concept:** Git  
-**Action:** Push  
-**Object:** `git push`  
-**Classification:** Command  
-**Environment:** Git  
-**Path Type:** N/A  
-**Tags:** command  
+**Concept:** Git
+**Action:** Push
+**Object:** `git push`
+**Classification:** Command
+**Environment:** Git
+**Path Type:** N/A
+**Tags:** command
+---
 
 ---
 

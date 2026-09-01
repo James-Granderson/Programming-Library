@@ -1,4 +1,4 @@
-# select
+# `SELECT`
 
 **Concept:** SQL
 **Action:** Query
@@ -7,6 +7,7 @@
 **Environment:** Any SQL database
 **Path Type:** N/A
 **Tags:** keyword
+---
 
 ---
 

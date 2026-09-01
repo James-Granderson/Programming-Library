@@ -1,4 +1,4 @@
-# pointer
+# `Pointer`
 
 **Concept:** C
 **Action:** Declare
@@ -6,6 +6,7 @@
 **Classification:** Pointer Concept
 **Environment:** Any C compiler
 **Path Type:** N/A
+---
 
 ---
 

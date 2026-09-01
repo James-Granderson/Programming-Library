@@ -1,4 +1,4 @@
-# string
+# `std::string`
 
 **Concept:** `C++`
 **Action:** Declare
@@ -6,6 +6,7 @@
 **Classification:** Data Type
 **Environment:** Any `C++` compiler
 **Path Type:** N/A
+---
 
 ---
 

@@ -1,4 +1,4 @@
-# auto
+# `auto`
 
 **Concept:** `C++`
 **Action:** Deduce Type
@@ -7,6 +7,7 @@
 **Environment:** Any `C++11` or later compiler
 **Path Type:** N/A
 **Tags:** keyword
+---
 
 ---
 

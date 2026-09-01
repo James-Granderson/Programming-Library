@@ -1,5 +1,4 @@
-# double
-
+# `double`
 **Concept:** C
 **Action:** Declare
 **Object:** `double`
@@ -7,27 +6,30 @@
 **Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** keyword
+---
 
 ---
 
 ### What It Is
 
-A built-in C data type used to store double-precision floating-point values.
+A floating-point data type used to store numbers with fractional values.
 
 ### What It Does
 
-Represents numbers with a fractional component using greater precision than `float`.
+Stores floating-point values with at least 10 decimal digits of precision. Its size is implementation-dependent, but it is commonly 64 bits.
 
 ### How to Use
 
-Declare a variable with the `double` type and optionally initialize it with a floating-point literal.
+Declare a variable with `double`.
 
 ### Requirements
 
-C language  // `double` is a built-in C data type.
+None.
 
 ### Representation
 
 ```c
-double pi = 3.1415926535;
+double number = 3.14159;
+
 ```
+

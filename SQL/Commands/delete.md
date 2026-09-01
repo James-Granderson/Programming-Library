@@ -1,4 +1,4 @@
-# delete
+# `DELETE`
 
 **Concept:** SQL
 **Action:** Delete
@@ -7,6 +7,7 @@
 **Environment:** Any SQL database
 **Path Type:** N/A
 **Tags:** keyword
+---
 
 ---
 
@@ -32,3 +33,4 @@ SQL database  // Provides the table whose rows are deleted.
 ```sql
 DELETE FROM users WHERE name = 'Alice';
 ```
+

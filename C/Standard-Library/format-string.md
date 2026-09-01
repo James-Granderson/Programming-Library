@@ -1,4 +1,4 @@
-# format-string
+# `Format String`
 
 **Concept:** C
 **Action:** Format
@@ -7,6 +7,7 @@
 **Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** format-string
+---
 
 ---
 

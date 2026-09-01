@@ -1,11 +1,12 @@
-# null-pointer
+# `Null Pointer`
 
-**Concept:** C  
-**Action:** Represent  
-**Object:** Null Pointer  
-**Classification:** Pointer Concept  
-**Environment:** Any C compiler  
-**Path Type:** N/A  
+**Concept:** C
+**Action:** Represent
+**Object:** Null Pointer
+**Classification:** Pointer Concept
+**Environment:** Any C compiler
+**Path Type:** N/A
+---
 
 ---
 

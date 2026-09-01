@@ -1,4 +1,4 @@
-# signed-integer
+# `signed int`
 
 **Concept:** C
 **Action:** Declare
@@ -7,6 +7,7 @@
 **Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** keyword
+---
 
 ---
 

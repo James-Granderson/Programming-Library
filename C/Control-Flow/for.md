@@ -1,4 +1,4 @@
-# for
+# `for`
 
 **Concept:** C
 **Action:** Iterate
@@ -7,6 +7,7 @@
 **Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** keyword
+---
 
 ---
 

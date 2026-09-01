@@ -1,4 +1,4 @@
-# local-scope
+# `Local Scope`
 
 **Concept:** C
 **Action:** Define
@@ -7,6 +7,7 @@
 **Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** scope
+---
 
 ---
 

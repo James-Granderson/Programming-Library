@@ -1,4 +1,4 @@
-# enum
+# `enum`
 
 **Concept:** C
 **Action:** Define
@@ -7,6 +7,7 @@
 **Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** keyword
+---
 
 ---
 

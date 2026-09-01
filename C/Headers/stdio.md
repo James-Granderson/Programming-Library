@@ -1,4 +1,4 @@
-# stdio.h
+# `stdio.h`
 
 **Concept:** C
 **Action:** Include
@@ -7,6 +7,7 @@
 **Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** header
+---
 
 ---
 

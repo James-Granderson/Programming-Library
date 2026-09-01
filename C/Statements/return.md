@@ -1,4 +1,4 @@
-# return
+# `return`
 
 **Concept:** C
 **Action:** Return
@@ -7,6 +7,7 @@
 **Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** keyword
+---
 
 ---
 

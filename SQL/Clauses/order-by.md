@@ -1,4 +1,4 @@
-# order-by
+# `ORDER BY`
 
 **Concept:** SQL
 **Action:** Sort
@@ -7,6 +7,7 @@
 **Environment:** Any SQL database
 **Path Type:** N/A
 **Tags:** keyword
+---
 
 ---
 
@@ -31,3 +32,4 @@ Place `ORDER BY` at the end of a `SELECT`, name the column to sort by, and add `
 ```sql
 SELECT name, age FROM users ORDER BY age DESC;
 ```
+

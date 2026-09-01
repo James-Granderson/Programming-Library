@@ -1,11 +1,12 @@
 # `#define`
 
-**Concept:** C  
-**Action:** Define  
-**Object:** `#define`  
-**Classification:** Preprocessor Directive  
-**Environment:** Any C compiler  
-**Path Type:** N/A  
+**Concept:** C
+**Action:** Define
+**Object:** `#define`
+**Classification:** Preprocessor Directive
+**Environment:** Any C compiler
+**Path Type:** N/A
+---
 
 ---
 

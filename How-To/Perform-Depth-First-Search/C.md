@@ -1,4 +1,4 @@
-# Perform Depth-First Search
+# `Perform Depth-First Search`
 
 **Concept:** C
 **Action:** Traverse
@@ -7,6 +7,7 @@
 **Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** procedure
+---
 
 ---
 

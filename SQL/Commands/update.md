@@ -1,4 +1,4 @@
-# update
+# `UPDATE`
 
 **Concept:** SQL
 **Action:** Update
@@ -32,3 +32,4 @@ SQL database  // Provides the table whose rows are modified.
 ```sql
 UPDATE users SET age = 31 WHERE name = 'Alice';
 ```
+

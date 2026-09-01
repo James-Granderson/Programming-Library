@@ -1,4 +1,4 @@
-# printf-format-specifier-catalog
+# `printf Format Specifier Catalog`
 
 **Concept:** C
 **Action:** Reference
@@ -7,103 +7,144 @@
 **Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** format-string
+---
 
 ---
 
 ### What It Is
 
-A catalog of conversion specifications accepted by the standard C `printf` family.
-
-### What It Does
-
-Shows how a format specification chooses the output representation and the argument type it expects.
-
-### How to Use
-
-Write a conversion specification as:
-
-```text
-%[flags][width][.precision][length]conversion
-```
-
-Match every conversion specification with an argument of the required type. A mismatched conversion and argument type has undefined behavior.
-
-### Conversion Specifiers
-
-| Conversion | Literal representation | Argument and output |
-| --- | --- | --- |
-| `d` | `%d` | Signed decimal integer |
-| `i` | `%i` | Signed decimal integer |
-| `o` | `%o` | Unsigned octal integer |
-| `u` | `%u` | Unsigned decimal integer |
-| `x` | `%x` | Unsigned hexadecimal integer with lowercase letters |
-| `X` | `%X` | Unsigned hexadecimal integer with uppercase letters |
-| `b` | `%b` | Unsigned binary integer (C23) |
-| `B` | `%B` | Unsigned binary integer with uppercase prefix when supported; optional in C23 |
-| `f` | `%f` | Decimal floating-point notation |
-| `F` | `%F` | Decimal floating-point notation |
-| `e` | `%e` | Scientific floating-point notation with a lowercase exponent |
-| `E` | `%E` | Scientific floating-point notation with an uppercase exponent |
-| `g` | `%g` | Shorter of decimal or scientific notation with a lowercase exponent |
-| `G` | `%G` | Shorter of decimal or scientific notation with an uppercase exponent |
-| `a` | `%a` | Hexadecimal floating-point notation with lowercase letters |
-| `A` | `%A` | Hexadecimal floating-point notation with uppercase letters |
-| `c` | `%c` | Character |
-| `s` | `%s` | Character string |
-| `p` | `%p` | Pointer value |
-| `n` | `%n` | Stores the number of characters written so far through a pointer; it writes no output |
-| `%` | `%%` | A literal percent sign; no argument |
-
-### Flags
-
-| Flag | Effect |
-| --- | --- |
-| `-` | Left-justify in the field |
-| `+` | Prefix signed numeric output with a sign |
-| space | Prefix a positive signed numeric output with a space when `+` is absent |
-| `#` | Use the conversion's alternative form |
-| `0` | Pad numeric output with leading zeroes when applicable |
-
-### Width and Precision
-
-| Component | Meaning |
-| --- | --- |
-| Width | Minimum field width, written as digits or supplied by `*` with an `int` argument |
-| Precision | Begins with `.`; its meaning depends on the conversion |
-| `.*` | Takes precision from an `int` argument |
-
-For integer conversions, precision sets a minimum digit count. For `f`, `e`, `E`, `a`, and `A`, it controls digits after the radix point. For `g` and `G`, it controls significant digits. For `s`, it limits the bytes written.
-
-### Length Modifiers
-
-| Modifier | Meaning |
-| --- | --- |
-| `hh`, `h` | Select a narrower integer argument type after default argument promotions |
-| `l`, `ll` | Select `long` or `long long` integer forms; `l` also changes `c` and `s` to wide-character forms |
-| `j` | Selects an `intmax_t` or `uintmax_t` form |
-| `z` | Selects the signed counterpart of `size_t` or the corresponding unsigned form |
-| `t` | Selects a `ptrdiff_t` form |
-| `L` | Selects `long double` for floating-point conversions |
-| `wN`, `wfN` | C23 width modifiers for integer types; support depends on the implementation |
-
-Only specific length-modifier and conversion pairs are valid. Do not combine them freely.
-
-### Requirements
-
-`<stdio.h>`  // Declares `printf`.
-Matching argument types  // Each conversion requires the corresponding promoted argument type.
+A reference for the conversion specifiers used by `printf`.
 
 ### Representation
 
+
+| Specifier | Expects            | Displays                                    |
+| --------- | ------------------ | ------------------------------------------- |
+| `%d`      | signed integer     | decimal integer                             |
+| `%i`      | signed integer     | decimal integer                             |
+| `%o`      | unsigned integer   | octal integer                               |
+| `%u`      | unsigned integer   | decimal integer                             |
+| `%x`      | unsigned integer   | hexadecimal, lowercase                      |
+| `%X`      | unsigned integer   | hexadecimal, uppercase                      |
+| `%f`      | `double`           | decimal floating point                      |
+| `%e`      | `double`           | scientific notation, lowercase              |
+| `%E`      | `double`           | scientific notation, uppercase              |
+| `%g`      | `double`           | shorter decimal/scientific form             |
+| `%G`      | `double`           | shorter decimal/scientific form             |
+| `%a`      | `double`           | hexadecimal floating point                  |
+| `%A`      | `double`           | hexadecimal floating point                  |
+| `%c`      | `int`              | character                                   |
+| `%s`      | pointer to `char`  | string                                      |
+| `%p`      | pointer            | pointer representation                      |
+| `%n`      | pointer to integer | stores characters written; displays nothing |
+| `%%`      | nothing            | `%`                                         |
+
+
+
+
+### Flags
+
+
+| Flag | Meaning                             |
+| ---- | ----------------------------------- |
+| `-`  | left-align                          |
+| `+`  | show the sign                       |
+|      | space before positive signed output |
+| `#`  | alternative form                    |
+| `0`  | pad with zeroes                     |
+
+
+
+
+### Width
+
+Sets the minimum number of characters used for the output.
+
 ```c
-#include <stdio.h>
+printf("%8d", 42);
 
-int main(void) {
-    int count = 12;
-    double ratio = 0.75;
-    const char *name = "Ada";
-
-    printf("%-8s count=%04d ratio=%.2f%%\n", name, count, ratio * 100);
-    return 0;
-}
 ```
+
+The output is at least 8 characters wide.
+
+`*` can be used to take the width from an `int` argument.
+
+### Precision
+
+Controls the amount of output produced, depending on the conversion.
+
+```c
+printf("%.2f", 3.14159);
+
+```
+
+Produces:
+
+```text
+3.14
+
+```
+
+
+
+### Length Modifiers
+
+Change the type or interpretation expected by a conversion.
+
+Common modifiers:
+
+```text
+hh
+h
+l
+ll
+j
+z
+t
+L
+
+```
+
+For example:
+
+```c
+printf("%ld", number);
+
+```
+
+uses `l` to specify a `long` integer.
+
+### Format Structure
+
+A format specification can combine these parts:
+
+```text
+%[flags][width][.precision][length]conversion
+
+```
+
+For example:
+
+```c
+printf("%-8.2f", value);
+
+```
+
+means:
+
+```text
+%    start
+-    left-align
+8    minimum width
+.2   precision
+f    floating-point output
+
+```
+
+
+
+### Requirements
+
+`<stdio.h>` // Declares `printf`.
+
+Matching argument type // Provides the value expected by the conversion specifier.

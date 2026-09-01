@@ -1,12 +1,13 @@
-# char
+# `char`
 
-**Concept:** C  
-**Action:** Declare  
-**Object:** `char`  
-**Classification:** Data Type  
-**Environment:** Any C compiler  
+**Concept:** C
+**Action:** Declare
+**Object:** `char`
+**Classification:** Data Type
+**Environment:** Any C compiler
 **Path Type:** N/A
-**Tags:** keyword  
+**Tags:** keyword
+---
 
 ---
 

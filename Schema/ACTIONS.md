@@ -36,3 +36,6 @@
 - Traverse
 - Search
 - Pop
+- Move
+- Display
+-Copy

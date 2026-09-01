@@ -1,12 +1,13 @@
-# commit
+# `git commit`
 
-**Concept:** Git  
-**Action:** Commit  
-**Object:** `git commit`  
-**Classification:** Command  
-**Environment:** Git  
-**Path Type:** N/A  
-**Tags:** command  
+**Concept:** Git
+**Action:** Commit
+**Object:** `git commit`
+**Classification:** Command
+**Environment:** Git
+**Path Type:** N/A
+**Tags:** command
+---
 
 ---
 

@@ -1,4 +1,4 @@
-# binary-search
+# `Binary Search`
 
 **Concept:** Algorithms
 **Action:** Search
@@ -7,6 +7,7 @@
 **Environment:** Language-independent
 **Path Type:** N/A
 **Tags:** algorithm
+---
 
 ---
 

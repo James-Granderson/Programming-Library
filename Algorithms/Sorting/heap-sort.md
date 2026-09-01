@@ -1,4 +1,4 @@
-# heap-sort
+# `Heap Sort`
 
 **Concept:** Algorithms
 **Action:** Sort
@@ -7,6 +7,7 @@
 **Environment:** Language-independent
 **Path Type:** N/A
 **Tags:** algorithm
+---
 
 ---
 

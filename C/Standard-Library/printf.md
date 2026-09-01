@@ -1,4 +1,4 @@
-# printf
+# `printf`
 
 **Concept:** C
 **Action:** Print
@@ -7,6 +7,7 @@
 **Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** function
+---
 
 ---
 

@@ -1,4 +1,4 @@
-# malloc
+# `malloc`
 
 **Concept:** C
 **Action:** Allocate
@@ -7,6 +7,7 @@
 **Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** function
+---
 
 ---
 

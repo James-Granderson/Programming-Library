@@ -1,4 +1,4 @@
-# where
+# `WHERE`
 
 **Concept:** SQL
 **Action:** Filter
@@ -7,6 +7,7 @@
 **Environment:** Any SQL database
 **Path Type:** N/A
 **Tags:** keyword
+---
 
 ---
 

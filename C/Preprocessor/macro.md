@@ -1,11 +1,12 @@
-# macro
+# `macro`
 
-**Concept:** C  
-**Action:** Define  
-**Object:** macro  
-**Classification:** Preprocessor Construct  
-**Environment:** Any C compiler  
-**Path Type:** N/A  
+**Concept:** C
+**Action:** Define
+**Object:** macro
+**Classification:** Preprocessor Construct
+**Environment:** Any C compiler
+**Path Type:** N/A
+---
 
 ---
 

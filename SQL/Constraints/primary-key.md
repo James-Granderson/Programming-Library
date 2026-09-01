@@ -1,4 +1,4 @@
-# primary-key
+# `PRIMARY KEY`
 
 **Concept:** SQL
 **Action:** Define
@@ -7,6 +7,7 @@
 **Environment:** Any SQL database
 **Path Type:** N/A
 **Tags:** keyword
+---
 
 ---
 

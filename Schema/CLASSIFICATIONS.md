@@ -27,3 +27,8 @@
 - Scope
 - Data Structure
 - Algorithm
+- Programming Pattern- Shell Concept
+- Shell Operator
+- Shell Script
+- Programming Concept
+- Shell Concept

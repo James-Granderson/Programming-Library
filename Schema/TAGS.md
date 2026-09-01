@@ -24,3 +24,7 @@ combine with either.
 - scope
 - data-structure
 - algorithm
+- raii
+- shell
+- shell-script
+- shell-operator

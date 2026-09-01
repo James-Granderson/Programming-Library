@@ -1,12 +1,13 @@
-# NULL
+# `NULL`
 
-**Concept:** C  
-**Action:** Assign Value  
-**Object:** `NULL`  
-**Classification:** Macro  
-**Environment:** Any C compiler  
+**Concept:** C
+**Action:** Assign Value
+**Object:** `NULL`
+**Classification:** Macro
+**Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** expression
+---
 
 ---
 

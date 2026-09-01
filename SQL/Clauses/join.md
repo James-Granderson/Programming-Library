@@ -1,4 +1,4 @@
-# join
+# `JOIN`
 
 **Concept:** SQL
 **Action:** Combine
@@ -7,6 +7,7 @@
 **Environment:** Any SQL database
 **Path Type:** N/A
 **Tags:** keyword
+---
 
 ---
 

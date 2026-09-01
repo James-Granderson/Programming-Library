@@ -1,4 +1,4 @@
-# sizeof
+# `sizeof`
 
 **Concept:** C
 **Action:** Measure
@@ -7,6 +7,7 @@
 **Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** operator
+---
 
 ---
 

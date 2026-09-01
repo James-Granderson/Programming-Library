@@ -1,4 +1,4 @@
-# int
+# `INT`
 
 **Concept:** SQL
 **Action:** Declare
@@ -7,6 +7,7 @@
 **Environment:** Any SQL database
 **Path Type:** N/A
 **Tags:** keyword
+---
 
 ---
 

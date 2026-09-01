@@ -1,4 +1,4 @@
-# vector
+# `std::vector`
 
 **Concept:** `C++`
 **Action:** Declare
@@ -6,6 +6,7 @@
 **Classification:** Container
 **Environment:** Any `C++` compiler
 **Path Type:** N/A
+---
 
 ---
 

@@ -1,4 +1,4 @@
-# depth-first-search
+# `Depth-First Search`
 
 **Concept:** Algorithms
 **Action:** Traverse
@@ -7,6 +7,7 @@
 **Environment:** Language-independent
 **Path Type:** N/A
 **Tags:** algorithm
+---
 
 ---
 

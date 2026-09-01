@@ -1,4 +1,4 @@
-# address-of
+# `&`
 
 **Concept:** C
 **Action:** Address
@@ -7,6 +7,7 @@
 **Environment:** Any C compiler
 **Path Type:** N/A
 **Tags:** operator
+---
 
 ---
 

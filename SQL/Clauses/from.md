@@ -1,13 +1,14 @@
-# from
+# `FROM`
 
 **Concept:** SQL
 **Action:** Reference
 **Object:** `FROM`
-**Object Key:** SQL/FROM
+**Object:** ** SQL/FROM
 **Classification:** Clause
 **Environment:** Any SQL database
 **Path Type:** N/A
 **Tags:** keyword
+---
 
 ---
 

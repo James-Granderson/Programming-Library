@@ -1,4 +1,4 @@
-# hash-table
+# `Hash Table`
 
 **Concept:** Data Structures
 **Action:** Store
@@ -7,6 +7,7 @@
 **Environment:** Language-independent
 **Path Type:** N/A
 **Tags:** data-structure
+---
 
 ---
 

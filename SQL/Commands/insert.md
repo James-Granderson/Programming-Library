@@ -1,4 +1,4 @@
-# insert
+# `INSERT`
 
 **Concept:** SQL
 **Action:** Insert
@@ -7,6 +7,7 @@
 **Environment:** Any SQL database
 **Path Type:** N/A
 **Tags:** keyword
+---
 
 ---
 
