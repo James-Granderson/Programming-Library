@@ -24,8 +24,12 @@ Run uniq with optional flags and an input file or piped input.
 
 Shell
 ### Representation
+```shell
 sort file.txt | uniq
-Flags
+```
+
+### Flags
+```text
 -c — Prefix each line with its number of occurrences.
 -d — Outines that appear more than once.
 -u — Output only lines that appear exactly once.

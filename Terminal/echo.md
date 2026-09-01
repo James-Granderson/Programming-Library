@@ -7,7 +7,6 @@
 **Environment:** Shell
 **Path Type:** N/A
 **Tags:** command
----
 
 ---
 
@@ -24,7 +23,12 @@ Run echo followed by the text to display.
 
 Shell
 ### Representation
+```sh
 echo "hello"
+
+```
 Flags
+```text
 -n — Suppress the trailing newline.
 -e — Enable interpretation of backslash escapes on implementations that support this behavior.
+```

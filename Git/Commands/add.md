@@ -7,7 +7,6 @@
 **Environment:** Git
 **Path Type:** N/A
 **Tags:** command
----
 
 ---
 
@@ -36,3 +35,5 @@ git add .
 git add README.md
 git add C/Data-Types/char.md
 git add C/
+```
+

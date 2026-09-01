@@ -7,7 +7,6 @@
 **Environment:** Shell
 **Path Type:** N/A
 **Tags:** command
----
 
 ---
 
@@ -23,7 +22,10 @@ Run mv followed by optional flags, a source path, and a destination path.
 ### Requirements
 
 Shell
+
 ### Representation
+
+```text
 mv old-name.txt new-name.txt
 Flags
 -i — Prompt before overwriting destination.

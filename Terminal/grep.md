@@ -7,9 +7,9 @@
 **Environment:** Shell
 **Path Type:** N/A
 **Tags:** command
----
 
 ---
+
 
 ### What It Is
 
@@ -24,8 +24,12 @@ Run grep followed by optional flags, a search pattern, and an input source.
 
 Shell
 ### Representation
+```shell
 grep "pattern" file.txt
-Flags
+```
+
+### Flags
+```text
 -i — Perform a case-insensitive match.
 -v — Invert the match and show non-matching lines.ecursively search directories.
 -n — Show line numbers with matching lines.
@@ -33,3 +37,4 @@ Flags
 -l — Show only filenames containing a match.
 -w — Match whole words only.
 -E — Enable extended regular expressions.
+```

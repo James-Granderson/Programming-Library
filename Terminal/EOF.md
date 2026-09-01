@@ -7,9 +7,6 @@
 **Environment:** Shell
 **Path Type:** N/A
 **Tags:** shell
----
-
----
 
 ---
 
@@ -46,7 +43,7 @@ data
 data
 data
 EOF
-````
+```
 
 Here-document:
 
@@ -70,6 +67,7 @@ world
 END
 ```
 
-### Notes
 
-The `EOF` in a here-document is **not the end of a file itself**. It is simply a marker chosen by the shell script to indicate the end of the here-document.
+
+
+
