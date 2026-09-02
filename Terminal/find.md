@@ -66,7 +66,7 @@ the command returns:
 
 The important part is that `find` recursively searches the directory tree, so you do not have to manually search each subdirectory.
 
-Flags
+### Flags
 
 ```text
 -name PATTERN — Match files and directories by name, case-sensitive.

@@ -23,8 +23,13 @@ Run wc followed by optional flags and one or more files.
 
 Shell
 ### Representation
+```shell
 wc -l file.txt
-Flags
+```
+
+### Flags
+
+```Text
 -l — Count lines.
 -w — Count words.
 -c — Count bytes.

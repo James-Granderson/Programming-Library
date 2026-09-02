@@ -41,7 +41,7 @@ mkdir directory
 
 ```
 
-Flags
+### Flags
 
 ```text
 -p — Create parent directories as needed and do not report an error if the requested directory already exists.
