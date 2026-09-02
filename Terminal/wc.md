@@ -7,7 +7,6 @@ wc
 **Environment:** Shell
 **Path Type:** N/A
 **Tags:** command
----
 
 ---
 

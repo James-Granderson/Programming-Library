@@ -6,7 +6,6 @@
 **Environment:** Language-independent
 **Path Type:** N/A
 **Tags:** algorithm
----
 
 ---
 

@@ -1,11 +1,11 @@
 # `touch`
 
-## **Concept:** Shell
-**Action:** Create
-**Object:** touch
-**Classification:** Command
-**Environment:** Shell
-**Path Type:** N/A
+**Concept:** Shell  
+**Action:** Create  
+**Object:** `touch`  
+**Classification:** Command  
+**Environment:** Shell  
+**Path Type:** N/A  
 **Tags:** command
 
 ---
@@ -20,7 +20,7 @@ Creates a file if it does not exist, or updates its access and modification time
 
 ### How to Use
 
-Run touch followed by one or more file paths.
+Run `touch` followed by one or more file paths.
 
 ### Requirements
 
@@ -30,11 +30,23 @@ Shell
 
 ```text
 touch file.txt
+
+touch -a file.txt
+touch -m file.txt
+touch -c file.txt
+touch -r reference.txt file.txt
+touch -t 202608311200 file.txt
+
+```
+
 Flags
+
+```text
 -a — Update only the access time.
 -m — Update only the modification time.
 -c — Do not create the file if it does not already exist.
 -r FILE — Use another file's timestamps.
 -t TIMESTAMP — Set a specific timestamp.
+
 ```
 

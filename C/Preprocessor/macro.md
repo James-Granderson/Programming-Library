@@ -6,7 +6,6 @@
 **Classification:** Preprocessor Construct
 **Environment:** Any C compiler
 **Path Type:** N/A
----
 
 ---
 

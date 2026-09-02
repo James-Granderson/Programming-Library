@@ -7,7 +7,6 @@
 **Environment:** Any `C++11` or later compiler
 **Path Type:** N/A
 **Tags:** function
----
 
 ---
 

@@ -7,7 +7,6 @@
 **Environment:** Language-independent
 **Path Type:** N/A
 **Tags:** data-structure
----
 
 ---
 
