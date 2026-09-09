@@ -38,4 +38,11 @@
 - Pop
 - Move
 - Display
--Copy
+- Copy- M wc
+- M wc
+- Fetch
+- Initialize
+- Inspect
+- Manage
+- Merge
+- Pull

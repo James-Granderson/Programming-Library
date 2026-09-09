@@ -20,9 +20,7 @@ Adds selected changes to the staging area so they can be included in the next co
 
 ### How to Use
 
-Specify the files or directories whose changes you want to stage.
-
-The `.` represents the current directory, so `git add .` stages changes throughout the current directory and its contents. You can also specify individual files or directories when you only want to stage particular changes.
+Specify the files or directories whose changes you want to stage. `.` represents the current directory, staging changes throughout it.
 
 ### Requirements
 
@@ -33,7 +31,4 @@ Git  // Provides the `git add` command.
 ```bash
 git add .
 git add README.md
-git add C/Data-Types/char.md
-git add C/
 ```
-

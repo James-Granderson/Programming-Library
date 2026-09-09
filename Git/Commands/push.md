@@ -1,38 +1,36 @@
-# `git push`
 
-**Concept:** Git
-**Action:** Push
-**Object:** `git push`
-**Classification:** Command
-**Environment:** Git
-**Path Type:** N/A
-**Tags:** command
-
----
-
-### What It Is
-
-A Git command used to upload local commits to a remote repository.
-
-### What It Does
-
-Sends commits from the local repository to the configured remote repository.
-
-### How to Use
-
-Use `git push` when Git is installed and available through the system PATH.
-
-When Git is not available through PATH in PowerShell, invoke the Git executable using `&` and its absolute path before providing the `push` command.
-
-### Requirements
-
-Git  // Provides the `git push` command.
-Committed changes  // Provides commits that can be sent to the remote repository.
-Remote repository  // Provides the destination for the pushed commits.
-
-### Representation
-
-Git available in PATH:
-
-```bash
 git push
+
+Concept: Git
+Action: Send
+Object: git push
+Classification: Command
+Environment: Git
+Path Type: N/A
+Tags: command
+
+What It Is
+
+A Git command used to send local commits to a remote repository.
+
+What It Does
+
+Uploads local commits and branch information to the specified remote repository.
+
+The -u option establishes the remote branch as the upstream branch for the current local branch.
+
+How to Use
+
+Specify the remote and branch you want to push to.
+
+Requirements
+
+Git // Provides the git push command.
+
+A remote repository // Provides the destination for the commits.
+
+Representation
+git push
+git push origin master
+git push -u origin master
+

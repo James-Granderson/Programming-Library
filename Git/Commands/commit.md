@@ -12,22 +12,22 @@
 
 ### What It Is
 
-A Git command used to create a permanent record of staged changes.
+A Git command that records staged changes as a new commit in the repository's history.
 
 ### What It Does
 
-Creates a commit containing the changes currently in the staging area.
+Creates a permanent snapshot of the staged changes along with a message describing them.
 
 ### How to Use
 
-Use `-m` followed by a message to describe the changes being committed.
+Run `git commit` with `-m` followed by a commit message in quotes.
 
 ### Requirements
 
-Git  // Provides the `git commit` command.
-Staged changes  // Provides the changes included in the commit.
+`git add`  // Stages the changes this command commits.
 
 ### Representation
 
 ```bash
-git commit -m "Update documentation"
+git commit -m "Update programming library"
+```
