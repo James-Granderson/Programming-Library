@@ -97,7 +97,7 @@ A major requirement of the library is that information remain uniquely addressab
 
 Keys are therefore used to prevent collisions between entries.
 
-The important distinction is that the **objects described by the schema are not themselves the keys**.
+The important distinction is that the **objects described by the schema are not themselves the keys unless invoked as such**.
 
 An object may appear in many relationships without becoming the identifier of the information describing it.
 
