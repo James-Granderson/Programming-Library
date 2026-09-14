@@ -4,7 +4,7 @@
 
 The Programming Library is an attempt to build an ultimate, easily indexable library of programming knowledge.
 
-The goal is not merely to collect information. The goal is to construct a system in which information can be **stored, related, retrieved, and expanded** from a small set of basic primitives.
+The goal is to construct a system in which information can be **stored, related, retrieved, and expanded** from a small set of basic primitives.
 
 The ambition is cognitive: something as prestigious as the Library of Alexandria, but built from the simplest possible foundations.
 
@@ -16,15 +16,15 @@ The library is built around a simple principle:
 
 Information is therefore added based on use.
 
-The library does not attempt to predict everything that might someday be useful. It records what becomes useful through actual interaction with programming.
+The Library records what becomes useful through actual interaction with programming. We try to avoid simply adding everything that might someday be useful all at
+
+once without proper exposure to the mechanism through practice. 
 
 ---
 
 ## The Schema
 
-The fundamental problem with a large information library is not storage.
-
-It is **retrieval**.
+The fundamental problem with a large information library is **retrieval**.
 
 As information accumulates, a simple folder hierarchy eventually becomes insufficient. A piece of information may belong simultaneously to a language, an environment, an object, an action, a concept, and a particular method of use.
 
@@ -32,7 +32,7 @@ Therefore, the Programming Library is organized around a **schema of relations**
 
 The schema provides the primitives through which information can be described and connected.
 
-The current Programming Dictionary schema consists of:
+The current Programming Dictionary schema is outlined as such:
 
 * **Actions**
 * **Classifications**
@@ -45,7 +45,7 @@ These categories form the vocabulary through which library information can be in
 
 The schema is deliberately small.
 
-The objective is not to create an enormous taxonomy. The objective is to create a sufficiently expressive set of primitives from which complex relationships can be constructed.
+The objective is to create a sufficiently expressive set of primitives from which complex relationships can be constructed rather than an enormous, ambiguous taxonomy.
 
 ---
 
@@ -86,9 +86,8 @@ Information can be traversed:
 * across related classifications
 * through multiple connected paths
 
-The hierarchy is therefore not the relationship itself.
 
-The hierarchy is one possible path through the relationships.
+The hierarchy allots possible paths through the relationships and should not be confused as a relationship itself.
 
 ---
 
@@ -125,10 +124,10 @@ Action
     ↓
 Concept
     ↓
-Procedure
+Individual Procedure
 ```
 
-Another problem may begin from the procedure and lead backward toward the environment in which it applies.
+Another problem may begin from the individual procedure and lead backward toward the environment in which it applies.
 
 The same information can therefore be discovered from different starting points.
 
@@ -141,22 +140,6 @@ This is the central advantage of the schema.
 The library grows organically.
 
 There is no requirement that every possible programming concept be documented before the system becomes useful.
-
-Instead:
-
-```text
-Need
-  ↓
-Discovery
-  ↓
-Use
-  ↓
-Understanding
-  ↓
-Storage
-  ↓
-Future Retrieval
-```
 
 A programming problem creates a need.
 
@@ -178,9 +161,9 @@ The Programming Dictionary provides the controlled vocabulary used by the librar
 
 Its purpose is to make information consistently indexable.
 
-The Dictionary is not intended to replace natural language. It provides a structural layer underneath it.
-
 Natural-language descriptions can vary enormously.
+
+The Dictionary is not intended to replace natural language.
 
 The schema provides stable primitives with which those descriptions can be connected.
 
@@ -220,7 +203,7 @@ Information is valuable because it can be found and used.
 
 ### 4. Use before storage
 
-Knowledge enters the library because it proved useful, not merely because it might someday be useful.
+Knowledge enters the library because it proved useful and was tested.
 
 ### 5. Preserve distinctions
 
@@ -248,26 +231,8 @@ As more information is added, more relationships become available.
 
 As more relationships become available, more paths to information become possible.
 
-The result should be a growing computational memory of programming knowledge:
-
-```text
-Primitive Schema
-       ↓
-    Relations
-       ↓
-    Indexing
-       ↓
-   Retrieval
-       ↓
-     Use
-       ↓
-   New Knowledge
-       ↓
-   New Relations
-       ↓
-   Larger Library
-```
+The result should be a growing computational memory of programming knowledge.
 
 The ambition is simple:
 
-**Build an immense library from very small primitives.**
+**Build an immense software library from very small primitives.**
