@@ -16,9 +16,7 @@ The library is built around a simple principle:
 
 Information is therefore added based on use.
 
-The Library records what becomes useful through actual interaction with programming. We try to avoid simply adding everything that might someday be useful all at
-
-once without proper exposure to the mechanism through practice. 
+The Library records what becomes useful through actual interaction with programming. We try to avoid simply adding everything that might someday be useful all at once without proper exposure to the mechanism through practice. 
 
 ---
 
