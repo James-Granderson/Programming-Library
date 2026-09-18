@@ -215,6 +215,31 @@ Information should be retrievable from different directions.
 
 Every useful discovery should have the potential to become part of the permanent library.
 
+### 8. Before → After
+
+A concept entry should be able to show both the code and the resulting data representation before and after a transformation.
+
+The pattern is intentionally simple:
+
+```text
+BEFORE                         AFTER
+───────────────                ───────────────
+Code                           Code
+[code before]                  [code after]
+
+Data Structure                 Data Structure
+[representation before]        [representation after]
+```
+
+This makes the change explicit without requiring the reader to infer what the author means by "before" and "after."
+
+- Before = code + data representation
+- After = code + data representation
+- The representation must be the actual runtime representation as it prints, not a decorative approximation
+- For non code related examples the before and after outcomes must mirror how it appears in physical reality. Not conceptually.
+
+The standard is: if someone can look at the Before and After side by side and immediately understand what changed in both the code and the resulting data structure, then the section is doing its job.
+
 ---
 
 ## The Long-Term Goal
