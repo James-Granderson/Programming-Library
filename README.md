@@ -235,8 +235,8 @@ This makes the change explicit without requiring the reader to infer what the au
 
 - Before = code + data representation
 - After = code + data representation
-- The representation must be the actual runtime representation as it prints, not a decorative approximation
-- For non code related examples the before and after outcomes must mirror how it appears in physical reality. Not conceptually.
+- The representation must be the actual runtime representation as it priorative approximation
+- All examples even those that are not code must show the literal change made, nothing abstract
 
 The standard is: if someone can look at the Before and After side by side and immediately understand what changed in both the code and the resulting data structure, then the section is doing its job.
 
