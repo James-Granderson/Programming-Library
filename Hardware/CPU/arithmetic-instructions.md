@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Arithmetic Instructions is a hardware concept that plays a defined role in a computer system.
+Arithmetic instructions are ISA-defined operations that add, subtract, multiply, divide, or otherwise compute numeric results. Their exact forms include operand widths, signedness, and immediate or register operands specified by the instruction set.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+The CPU obtains operands, computes a result in an execution unit, and writes or forwards it to a destination. Some operations also update condition flags; latency and throughput vary by processor.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Read the instruction-set definition for operands and result width.
+2. Identify source values and destination, including any implicit operands.
+3. Use the documented flags and overflow behavior when reasoning about the result.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A processor implementing the relevant ISA extension and valid operands are required. Arithmetic semantics, exceptions, and flags are ISA-specific.
 
 ### Representation
 
 ```text
-Arithmetic Instructions
-    ↓
-System behavior
+source operands → arithmetic unit → result / optional status flags
 ```

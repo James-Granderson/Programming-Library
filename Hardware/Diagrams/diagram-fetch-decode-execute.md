@@ -12,26 +12,26 @@
 
 ### What It Is
 
-Diagram Fetch Decode Execute is a hardware concept that plays a defined role in a computer system.
+A fetch–decode–execute diagram is a visual aid for a simplified model of instruction processing. It represents conceptual stages rather than three required physical components or the complete organization of a modern CPU.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It shows that an instruction is fetched from an address, interpreted, and executed, with the next instruction address selected afterward. Real processors overlap stages, handle memory and writeback separately, and may speculate or execute out of order.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Follow the arrows from the program counter to instruction fetch.
+2. Track the instruction through decode and execution, then note result and next-address updates.
+3. Treat the sequence as a teaching model; consult a microarchitecture diagram for pipelines and parallel stages.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+The diagram should label the model's scope and distinguish instruction flow from data flow. Stage names and implementation vary by architecture.
 
 ### Representation
 
 ```text
-Diagram Fetch Decode Execute
-    ↓
-System behavior
+PC → Fetch instruction → Decode operation → Execute
+ ↑                                         │
+ └──────────── next PC / branch target ────┘
 ```

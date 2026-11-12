@@ -12,26 +12,24 @@
 
 ### What It Is
 
-File Storage is a hardware concept that plays a defined role in a computer system.
+File storage is the organization of persistent data as named files and directories on a storage device or remote service. A filesystem maps file names and logical offsets to storage blocks; applications generally access files through an operating system API.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It preserves data beyond a process or power cycle and provides naming, metadata, access control, and allocation. File storage is not the same as RAM: data is accessed through filesystem and device layers and usually has higher latency.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Choose a filesystem or service compatible with the platform.
+2. Create or open a file through the OS, then read or write data and close or flush it when durability is needed.
+3. Maintain backups; a successful write does not by itself guarantee protection against device failure.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A persistent storage device or service, filesystem or storage interface, and operating-system support are required. Durability guarantees depend on device and configuration.
 
 ### Representation
 
 ```text
-File Storage
-    ↓
-System behavior
+application → file API → filesystem → block device/controller → persistent media
 ```

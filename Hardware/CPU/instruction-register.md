@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Instruction Register is a hardware concept that plays a defined role in a computer system.
+An instruction register is a CPU register that holds an instruction or part of one during processing. In a simple processor it may hold the fetched instruction for decoding; modern pipelined CPUs often use stage registers, queues, and decoded forms instead of one visible register.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It preserves instruction bits between fetch and decode or another processing stage so control logic can interpret them. It is distinct from the program counter, which identifies the next instruction address.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Locate the instruction-holding state in the design or teaching model.
+2. Trace fetched bits into decode while tracking the program counter separately.
+3. In a modern core, follow the front-end queue or pipeline register documented by that design.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A fetch path and state element wide enough for the instruction representation are required. Organization varies with fixed- or variable-length ISA designs.
 
 ### Representation
 
 ```text
-Instruction Register
-    ↓
-System behavior
+instruction memory → fetch register/queue → decoder; PC tracks fetch address
 ```

@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Sector is a hardware concept that plays a defined role in a computer system.
+A sector is a unit of addressable data on a block storage device. The device's logical sector size may differ from its physical recording unit; common formats include 512-byte logical sectors and 4 KiB sectors.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+The storage interface reads or writes sectors as blocks. Filesystems and operating systems combine sectors into larger allocation units; sector addressing does not describe file boundaries.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Check the device-reported logical and physical sector sizes.
+2. Use aligned block I/O appropriate to the device and filesystem.
+3. Distinguish a logical sector from a filesystem block or NAND erase block.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A block device defines sector addressing and a logical sector size. Physical organization and reporting are device-specific.
 
 ### Representation
 
 ```text
-Sector
-    ↓
-System behavior
+block address N → sector N [logical sector bytes]
 ```

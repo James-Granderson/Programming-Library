@@ -12,26 +12,25 @@
 
 ### What It Is
 
-Pcie is a hardware concept that plays a defined role in a computer system.
+PCI Express (PCIe) is a high-speed serial interconnect standard used to connect a root complex to endpoints such as graphics, network, and storage devices. Links comprise one or more lanes and are negotiated to a mutually supported generation and width.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+PCIe transports packetized transactions over point-to-point links. Switches can fan out connections; a physical slot's size does not guarantee its electrical lane count or generation.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Confirm the endpoint, slot or cable, lane wiring, and platform support.
+2. Install the device and let firmware/software enumerate the PCIe link.
+3. Check negotiated generation and width when diagnosing performance or compatibility.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A compatible root complex, endpoint, physical connection, and available lanes are required. Speed, lane count, power, and features depend on both devices and platform.
 
 ### Representation
 
 ```text
-Pcie
-    ↓
-System behavior
+Root complex ── xN serial lanes ──► PCIe endpoint
+                 (optional switch / fan-out)
 ```

@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Cpu Core is a hardware concept that plays a defined role in a computer system.
+A CPU core is an execution engine capable of fetching and executing an instruction stream. A core may contain front-end, execution, memory, and control structures; a processor package can contain one or multiple cores.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+The core runs instructions using its architecture-specific pipeline and accesses memory through caches and system interfaces. Core count does not equal simultaneous instruction throughput because dependencies and shared resources matter.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Identify the core architecture and supported instruction set.
+2. Trace instruction flow through fetch, execution, and memory access.
+3. Consider per-core resources and shared package resources when evaluating workload performance.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A core design, clock and power delivery, memory access paths, and compatible software are required. Core features vary by implementation.
 
 ### Representation
 
 ```text
-Cpu Core
-    ↓
-System behavior
+instruction stream → [ core: front end | execution | load/store ] → results
 ```

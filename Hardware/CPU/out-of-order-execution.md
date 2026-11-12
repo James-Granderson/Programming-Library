@@ -12,26 +12,25 @@
 
 ### What It Is
 
-Out of Order Execution is a hardware concept that plays a defined role in a computer system.
+Out-of-order execution lets a CPU issue ready operations before older stalled operations when their dependencies permit. The processor tracks dependencies and typically retires completed instructions in architectural order to preserve program behavior.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It can use otherwise idle execution units while waiting for a cache miss or other delay. It does not mean the program's visible results are committed in arbitrary order; recovery handles exceptions and mispredictions.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Trace instruction dependencies and identify which operations are ready.
+2. Observe a later independent operation executing while an earlier one waits.
+3. Distinguish execution completion from in-order retirement.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A scheduling window, dependency tracking, execution resources, and a mechanism to preserve architectural state are required. Details vary by microarchitecture.
 
 ### Representation
 
 ```text
-Out of Order Execution
-    ↓
-System behavior
+Program order: I1(wait) → I2(ready) → I3(ready)
+Execution: I2, I3 may run first; retirement remains ordered
 ```

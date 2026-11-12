@@ -12,26 +12,26 @@
 
 ### What It Is
 
-Diagram Cpu is a hardware concept that plays a defined role in a computer system.
+A CPU diagram is a visual reference showing selected processor structures and their relationships, such as a core, caches, execution units, and memory interface. It is an explanatory model, not a physical CPU component or a universal blueprint.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It helps readers locate functional roles and follow a simplified instruction or data path. A block-level diagram omits many implementation details; actual CPUs may combine, split, or arrange the shown functions differently.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Read the title and legend to identify the diagram's scope and abstraction level.
+2. Follow arrows to trace instruction, data, or control flow, noting which paths are simplified.
+3. Use the processor manual or detailed schematic for exact topology, signals, and timing.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A clearly scoped processor model, accurate labels, and a legend for arrows or symbols are needed. Do not infer vendor-specific design from a generic drawing.
 
 ### Representation
 
 ```text
-Diagram Cpu
-    ↓
-System behavior
+Instruction fetch → decode/dispatch → execution units → retirement
+       ↑              ↕ registers / caches              ↓
+       └──────────── memory interface ────────────────┘
 ```

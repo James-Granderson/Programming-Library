@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Sata is a hardware concept that plays a defined role in a computer system.
+Serial ATA (SATA) is a serial interface standard commonly used to connect storage devices such as HDDs and SATA SSDs to a host controller. SATA specifies link communication; it is not the storage medium itself.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It transports commands and data between the host and a device. SATA devices commonly use the ATA command set, often through AHCI, while interface generation, negotiated speed, and device limits constrain throughput.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Connect a SATA data cable to the host and appropriate power to the drive.
+2. Check controller mode and device detection in firmware and the operating system.
+3. Verify negotiated link speed when diagnosing bottlenecks.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A compatible SATA host port/controller, device, data cable, and power are required. Supported rates depend on both ends and the link.
 
 ### Representation
 
 ```text
-Sata
-    ↓
-System behavior
+OS/storage driver → SATA host ⇄ serial link ⇄ SATA drive
 ```

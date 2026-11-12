@@ -12,26 +12,25 @@
 
 ### What It Is
 
-Cache Coherence is a hardware concept that plays a defined role in a computer system.
+Cache coherence is the set of mechanisms that keeps multiple cached copies of shared memory from producing inconsistent values across CPU cores or agents. Protocols commonly track line states and coordinate ownership; exact protocols differ.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+On a read or write, coherence rules determine whether a line can be used, shared, invalidated, or transferred from another cache. Coherence is distinct from memory consistency, which specifies ordering visible to programs.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Identify which agents cache a shared address.
+2. Trace line state changes on reads and writes.
+3. Distinguish maintaining a single coherent value from ordering separate memory operations.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+Multiple cacheable agents and a coherence mechanism in the interconnect or memory system are required. State names and policies are implementation-specific.
 
 ### Representation
 
 ```text
-Cache Coherence
-    ↓
-System behavior
+Core 0 cache ── coherence messages ── Core 1 cache
+             └──── shared memory system ────┘
 ```

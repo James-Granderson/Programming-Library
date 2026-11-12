@@ -12,26 +12,25 @@
 
 ### What It Is
 
-Clock is a hardware concept that plays a defined role in a computer system.
+A hardware clock is a periodic timing signal used to coordinate synchronous circuit state changes. Clock frequency is cycles per second; a clock cycle is not necessarily one instruction or one completed operation.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+Clock edges provide timing references for registers and other sequential elements. Clock distribution, multiple domains, and dynamic frequency control affect when different parts of a system operate.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Read the clock domain and frequency relevant to the component.
+2. Relate state updates to active clock edges and timing constraints.
+3. Do not infer instruction throughput from frequency alone; consider pipeline and work per cycle.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A clock source, distribution network, and synchronous elements are required for clocked logic. Actual frequency is limited by design, voltage, temperature, and workload policy.
 
 ### Representation
 
 ```text
-Clock
-    ↓
-System behavior
+Clock:  _|‾|_|‾|_|‾|_
+          ↑   ↑   ↑  active edges
 ```

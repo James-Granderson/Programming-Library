@@ -12,26 +12,28 @@
 
 ### What It Is
 
-And Gate is a hardware concept that plays a defined role in a computer system.
+An AND gate is a digital logic gate whose output is 1 only when every input is 1. It implements conjunction in boolean logic.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+The gate combines input voltage levels into a logic output according to the truth function; real circuits have propagation delay and electrical limits.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. List the inputs as 0 or 1.
+2. Set the output to 1 only if all inputs are 1.
+3. Check fan-out and voltage compatibility in a physical circuit.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A logic-family implementation, valid supply levels, and defined input signals are required.
 
 ### Representation
 
 ```text
-And Gate
-    ↓
-System behavior
+A B | Y
+0 0 | 0
+0 1 | 0
+1 0 | 0
+1 1 | 1
 ```

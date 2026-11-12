@@ -12,26 +12,25 @@
 
 ### What It Is
 
-Data Movement Instructions is a hardware concept that plays a defined role in a computer system.
+Data-movement instructions transfer or copy values among registers, memory, and sometimes special registers. Loads and stores are common examples; moves between registers may be implemented as renaming or aliases in some CPUs.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+They place data where later operations need it. A load typically reads through the memory hierarchy into a register; a store sends register data toward memory. These operations are distinct from persistent file storage.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Identify source and destination locations and the operand size.
+2. For a load/store, compute the effective address and check alignment/permissions as defined by the ISA.
+3. Follow the data through registers, cache, and memory as appropriate.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A CPU ISA with the relevant transfer operation, accessible addresses, and valid permissions are required. Ordering and alignment rules are architecture-specific.
 
 ### Representation
 
 ```text
-Data Movement Instructions
-    ↓
-System behavior
+register ──store──► cache / RAM
+register ◄──load──── cache / RAM
 ```

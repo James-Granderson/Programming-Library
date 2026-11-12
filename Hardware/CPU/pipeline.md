@@ -12,26 +12,25 @@
 
 ### What It Is
 
-Pipeline is a hardware concept that plays a defined role in a computer system.
+A pipeline is a general design pattern that divides work into stages connected by intermediate state. In computer hardware it may refer to an instruction pipeline, a graphics pipeline, or another staged datapath; the context must identify which one.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+Each stage transforms or forwards work to the next, allowing different items to be processed concurrently. Throughput may improve after the pipeline fills, while stage imbalance, dependencies, and stalls limit progress.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Identify the pipeline's input, stages, and output.
+2. Follow one item through the stages and then compare multiple overlapping items.
+3. Locate stalls, stage bottlenecks, and the specific pipeline type being described.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+Defined stage behavior, inter-stage storage, and control for flow or stalls are required. Stage count and timing depend on the design.
 
 ### Representation
 
 ```text
-Pipeline
-    ↓
-System behavior
+Input → [Stage 1] → [Stage 2] → [Stage 3] → Output
+             item A →    item B →
 ```

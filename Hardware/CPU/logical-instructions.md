@@ -12,26 +12,26 @@
 
 ### What It Is
 
-Logical Instructions is a hardware concept that plays a defined role in a computer system.
+Logical instructions perform boolean operations on individual bits of one or more operands, commonly AND, OR, XOR, and NOT. They are distinct from comparisons, although some logical operations may set status flags.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+They manipulate bit patterns, often for masks, setting or clearing selected bits, or testing values. The operation is applied across the operand width according to the ISA.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Choose an operation and operand width.
+2. Apply the boolean truth function to each corresponding bit.
+3. Use the result as data or check any documented flag effects.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+An ISA implementation with the required logical operations and valid operands is required. Width and flag semantics are architecture-specific.
 
 ### Representation
 
 ```text
-Logical Instructions
-    ↓
-System behavior
+A: 1010
+B: 1100
+A AND B = 1000
 ```

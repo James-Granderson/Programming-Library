@@ -12,26 +12,28 @@
 
 ### What It Is
 
-Xnor Gate is a hardware concept that plays a defined role in a computer system.
+An XNOR gate is the complement of XOR. For two inputs it outputs 1 when the inputs are equal and 0 when they differ; it is also called an equivalence gate.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It detects matching bit values and is useful in equality checks and parity-related logic. Multi-input forms depend on how the function is defined or cascaded.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Compare the input bits.
+2. Output 1 when they match and 0 when they differ.
+3. For a word comparison, combine bitwise equality results as required.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+Compatible binary input levels and an XNOR implementation are required.
 
 ### Representation
 
 ```text
-Xnor Gate
-    ↓
-System behavior
+A B | Y
+0 0 | 1
+0 1 | 0
+1 0 | 0
+1 1 | 1
 ```

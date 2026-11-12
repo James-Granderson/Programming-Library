@@ -12,26 +12,25 @@
 
 ### What It Is
 
-Sram is a hardware concept that plays a defined role in a computer system.
+Static random-access memory (SRAM) stores each bit in a bistable circuit, commonly a multi-transistor cell, and retains its state while powered without periodic refresh. SRAM is typically faster and denser than registers but less dense and more costly per bit than DRAM.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+SRAM is used where low latency is valuable, especially CPU caches and buffers. It is volatile, and its speed, capacity, and power characteristics depend on the implementation.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Identify SRAM by its role in a cache or embedded memory block.
+2. Check access interface, capacity, and timing for the device.
+3. Do not confuse its no-refresh cell operation with nonvolatile storage.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A powered SRAM device and compatible interface are required. It loses data without power and is not the same cell technology as DRAM.
 
 ### Representation
 
 ```text
-Sram
-    ↓
-System behavior
+powered bistable cell → retains 0/1 without refresh
+SRAM cache ⇄ CPU core
 ```

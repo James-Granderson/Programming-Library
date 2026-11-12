@@ -12,26 +12,25 @@
 
 ### What It Is
 
-Vram is a hardware concept that plays a defined role in a computer system.
+Video RAM (VRAM) is memory available to a graphics processor for resources such as textures, frame buffers, and compute data. Discrete GPUs commonly use dedicated graphics memory; integrated GPUs often use a portion of system RAM instead.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It supplies high-bandwidth data to graphics execution and display hardware. ‘VRAM’ describes a role, not one memory technology; dedicated GPU memory may use specialized DRAM, while exact types vary by product.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Check whether the GPU has dedicated memory or uses shared system memory.
+2. Monitor capacity and bandwidth needs for the workload.
+3. Distinguish graphics memory from a display's own panel buffer, if present.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A GPU or graphics engine and an accessible memory pool are required. Capacity, technology, and sharing depend on the platform.
 
 ### Representation
 
 ```text
-Vram
-    ↓
-System behavior
+GPU ↔ graphics memory (dedicated)
+Integrated GPU ↔ shared system RAM
 ```

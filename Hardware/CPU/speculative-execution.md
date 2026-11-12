@@ -12,26 +12,25 @@
 
 ### What It Is
 
-Speculative Execution is a hardware concept that plays a defined role in a computer system.
+Speculative execution is work performed before the CPU knows whether it will be needed, commonly along a predicted branch path. Results are generally kept provisional until the speculation is validated.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It can hide control or memory latency by doing useful candidate work early. If the prediction is wrong or an exception invalidates the work, the processor discards or rolls back architectural effects; microarchitectural effects may still matter for security analysis.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Identify the unresolved condition or predicted path.
+2. Track which operations and results are provisional.
+3. Follow validation and commit, or the recovery path if speculation fails.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+Prediction or another basis for speculation, temporary state, and a recovery mechanism are required. Policies and observable effects vary by design.
 
 ### Representation
 
 ```text
-Speculative Execution
-    ↓
-System behavior
+predict / assume → execute provisionally → validate → commit
+                                      └→ discard and recover
 ```

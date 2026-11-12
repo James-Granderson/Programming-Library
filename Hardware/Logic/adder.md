@@ -12,26 +12,27 @@
 
 ### What It Is
 
-Adder is a hardware concept that plays a defined role in a computer system.
+An adder is a combinational circuit that computes the sum of binary operands. A half adder combines two bits; a full adder also accepts a carry-in and produces a carry-out.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It forms the arithmetic datapath used in processors, address generation, and other digital circuits. Multi-bit adders connect bit positions so carries propagate or are computed with faster structures.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Provide operand bits and, for a full adder, carry-in.
+2. Compute sum and carry for each bit position.
+3. Interpret overflow according to the chosen signed or unsigned representation.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+Binary input signals and logic for sum/carry are required. Width, carry strategy, and overflow handling depend on the design.
 
 ### Representation
 
 ```text
-Adder
-    ↓
-System behavior
+A B Cin | Sum Cout
+0 0  0  |  0   0
+0 1  0  |  1   0
+1 1  0  |  0   1
 ```

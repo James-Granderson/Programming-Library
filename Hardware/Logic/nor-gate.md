@@ -12,26 +12,28 @@
 
 ### What It Is
 
-Nor Gate is a hardware concept that plays a defined role in a computer system.
+A NOR gate produces the inverse of the OR of its inputs: its output is 1 only when every input is 0. NOR, like NAND, is functionally complete.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It detects whether any input is asserted and inverts the result. Physical behavior includes propagation delay and electrical constraints not shown by the truth table.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Evaluate whether any input is 1.
+2. Invert the OR result; output 1 only when none are asserted.
+3. Check compatible logic levels in a circuit implementation.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+Compatible binary input levels and a NOR implementation are required.
 
 ### Representation
 
 ```text
-Nor Gate
-    ↓
-System behavior
+A B | Y
+0 0 | 1
+0 1 | 0
+1 0 | 0
+1 1 | 0
 ```

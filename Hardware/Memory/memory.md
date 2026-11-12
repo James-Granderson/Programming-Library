@@ -12,26 +12,25 @@
 
 ### What It Is
 
-Memory is a hardware concept that plays a defined role in a computer system.
+Computer memory is hardware that holds data and instructions for use by a processor or device. The term includes registers, caches, volatile RAM, and nonvolatile memory; it is broader than main memory and distinct from file storage as a system role.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+Memory provides addressable state that components read or update. Different technologies trade off latency, capacity, cost, persistence, and location in the hierarchy.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Identify the kind of memory and the component that accesses it.
+2. Determine whether it is volatile, its address space, and its position in the hierarchy.
+3. Trace a read or write through caches and controllers to the relevant device.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A storage technology, access interface, and rules for addressing and data retention are required. Properties depend on the memory class.
 
 ### Representation
 
 ```text
-Memory
-    ↓
-System behavior
+registers → caches → RAM → persistent storage
+ faster/smaller                         larger/slower
 ```

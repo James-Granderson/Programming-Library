@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Ram is a hardware concept that plays a defined role in a computer system.
+Random-access memory (RAM) is memory whose locations can be accessed by address without sequentially reading preceding locations. In common PC usage, ‘RAM’ usually means volatile system memory modules, typically DRAM; RAM is a broader access concept, not one cell technology.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+RAM holds data and code currently needed by the system and can be read or written. Volatile RAM loses contents when power is removed; it differs from persistent SSD/HDD storage.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Check the system's supported memory type, capacity, and configuration.
+2. Install compatible modules if applicable and allow firmware to train/initialize memory.
+3. Use RAM for active working data; save durable files to persistent storage.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A RAM device and compatible controller/interface are required. Capacity, speed, and persistence depend on the specific technology.
 
 ### Representation
 
 ```text
-Ram
-    ↓
-System behavior
+CPU ↔ memory controller ↔ RAM (working data; usually volatile)
 ```

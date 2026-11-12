@@ -12,26 +12,25 @@
 
 ### What It Is
 
-Program Counter is a hardware concept that plays a defined role in a computer system.
+The program counter (PC) is CPU state containing an instruction address used to guide instruction fetch. Some architectures describe a current instruction pointer; implementation details and the exact visible value can differ.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+Normally fetch advances to a subsequent instruction; branches, calls, exceptions, and returns select another address. Predicted PCs may be used speculatively before control flow is resolved.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Read the current fetch address in the relevant architecture model.
+2. Determine whether sequential progression or a control-flow operation supplies the next address.
+3. For debugging, account for ISA instruction length and any pipeline or exception conventions.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+Instruction-address state and a fetch mechanism are required. Address format, update rules, and visibility are ISA-specific.
 
 ### Representation
 
 ```text
-Program Counter
-    ↓
-System behavior
+PC → instruction fetch → sequential next PC
+             └─ branch/exception → target PC
 ```

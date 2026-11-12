@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Control Unit is a hardware concept that plays a defined role in a computer system.
+The control unit is CPU logic that coordinates instruction processing by directing data paths and sequencing operations. It can be implemented with hardwired logic, microcode, or a combination.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It interprets decoded operations and issues control signals to register files, execution units, memory interfaces, and other resources. It orchestrates work rather than performing all arithmetic itself.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Follow an instruction from decode to the control decisions it requires.
+2. Trace which datapath resources are enabled and in what order.
+3. Distinguish control signals from the data being processed.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+An instruction decoder, sequencing logic, and interfaces to the CPU datapath are required. Internal organization varies by processor.
 
 ### Representation
 
 ```text
-Control Unit
-    ↓
-System behavior
+instruction decode → control signals → registers / ALUs / memory interface
 ```

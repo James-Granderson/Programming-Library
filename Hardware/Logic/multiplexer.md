@@ -12,26 +12,27 @@
 
 ### What It Is
 
-Multiplexer is a hardware concept that plays a defined role in a computer system.
+A multiplexer (MUX) is a combinational circuit that selects one of several data inputs and routes it to an output according to select signals.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It lets hardware share a downstream datapath among alternative sources. For 2^n inputs, n select bits can choose an input, subject to the design's encoding and control.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Identify data inputs and select-line encoding.
+2. Set the select value for the desired source.
+3. Trace only the selected input to the output.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+Data inputs, select signals, and a MUX implementation with compatible widths are required. Selection timing and behavior during transitions depend on circuit design.
 
 ### Representation
 
 ```text
-Multiplexer
-    ↓
-System behavior
+D0 ─┐
+D1 ─┼─► [MUX] ─► Y
+D2 ─┤       ▲
+D3 ─┘    select S1,S0
 ```

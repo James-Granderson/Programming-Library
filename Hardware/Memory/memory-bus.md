@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Memory Bus is a hardware concept that plays a defined role in a computer system.
+A memory bus is the communication path between a memory controller and memory devices. Depending on the system, the term may describe address, command, and data signaling across a channel; it is not necessarily a single shared wire bundle.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It carries memory commands and data transfers under timing and electrical rules. Channel width, data rate, rank/bank organization, and controller scheduling determine behavior; modern DRAM interfaces use carefully timed parallel signals.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Identify the controller, memory channel, and attached devices.
+2. Trace command/address and read/write data phases using the applicable protocol.
+3. Use platform documentation for supported rates and channel configuration.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A compatible memory controller, memory devices, electrical connection, and protocol timing are required. Details vary by memory generation.
 
 ### Representation
 
 ```text
-Memory Bus
-    ↓
-System behavior
+CPU ↔ memory controller ═ command/address + data channel ═ DRAM
 ```

@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Fetch Decode Execute is a hardware concept that plays a defined role in a computer system.
+Fetch–decode–execute is a simplified model of instruction processing: obtain an instruction, interpret it, and perform its operation. Real CPUs overlap stages, add memory and retirement steps, and may use different names or organizations.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+The model explains how a program counter selects an instruction, how its encoding becomes an operation, and how results are produced. It is a teaching abstraction, not a fixed three-box implementation.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Fetch the instruction at the current or predicted program counter.
+2. Decode its operation and operands.
+3. Execute it and determine the next PC; account for memory access and writeback where relevant.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+An instruction stream, program counter, decoder, execution resources, and memory interface are needed in an actual CPU. Stage boundaries vary.
 
 ### Representation
 
 ```text
-Fetch Decode Execute
-    ↓
-System behavior
+Fetch → Decode → Execute → (Memory / Writeback) → next instruction
 ```

@@ -12,26 +12,26 @@
 
 ### What It Is
 
-Not Gate is a hardware concept that plays a defined role in a computer system.
+A NOT gate, or inverter, produces the logical complement of a single input: 0 becomes 1 and 1 becomes 0.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It reverses a logic state and can also provide signal drive or polarity conversion in a physical design. Its electrical output is subject to loading and delay.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Read the input logic state.
+2. Invert it to determine the output.
+3. When wiring an inverter, check supply, thresholds, and load.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+One valid logic input and a compatible inverter circuit are required.
 
 ### Representation
 
 ```text
-Not Gate
-    ↓
-System behavior
+A | Y
+0 | 1
+1 | 0
 ```

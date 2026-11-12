@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Register is a hardware concept that plays a defined role in a computer system.
+A CPU register is a small, fast storage location within a processor. Architectural registers are named by the instruction set; physical registers, pipeline registers, and control registers are implementation or system concepts with different roles.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+Registers hold operands, addresses, intermediate values, or processor state close to execution units. Register files provide read/write ports whose count and timing constrain the design.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Identify whether the register is architectural, control, or an internal pipeline element.
+2. Trace which instruction reads or writes it.
+3. Use the ISA or processor documentation for width, privilege, and side effects.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A processor design with storage elements and access logic is required. Register names, widths, and semantics are architecture-specific.
 
 ### Representation
 
 ```text
-Register
-    ↓
-System behavior
+instruction → register-file read → execution → register-file write
 ```

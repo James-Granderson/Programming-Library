@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Arithmetic Logic Unit is a hardware concept that plays a defined role in a computer system.
+An arithmetic logic unit (ALU) is combinational or pipelined CPU circuitry that performs integer arithmetic and bitwise operations. CPUs may have multiple specialized execution units; an ALU is not the whole CPU.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It selects an operation and computes a result from input operands, often producing condition information. The control and scheduling logic decide which operation reaches the unit.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Trace the instruction's decoded operation and operand values.
+2. Observe the selected ALU function and result path.
+3. Check whether flags or exceptions are produced by this operation.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+Operand signals, operation control, and circuitry for the required operations are needed. Width and supported functions depend on the design.
 
 ### Representation
 
 ```text
-Arithmetic Logic Unit
-    ↓
-System behavior
+Operands A,B + operation select → [ ALU ] → result, status
 ```

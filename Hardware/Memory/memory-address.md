@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Memory Address is a hardware concept that plays a defined role in a computer system.
+A memory address is a value used to identify a location or range in an address space. A CPU program typically uses virtual addresses; translation hardware maps them to physical memory addresses, and devices may use I/O or DMA address spaces.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+The address selects the bytes or data being read or written. Address interpretation depends on width, address space, access size, translation, and permissions; it is not itself the stored data.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Identify the address space and whether the value is virtual, physical, or device-visible.
+2. Determine access size and alignment.
+3. Follow translation and permission checks before locating the memory hierarchy entry.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A defined address space, addressing rules, and access mechanism are required. Translation and protection depend on the processor and operating system.
 
 ### Representation
 
 ```text
-Memory Address
-    ↓
-System behavior
+virtual address → translation/protection → physical address → cache / RAM
 ```

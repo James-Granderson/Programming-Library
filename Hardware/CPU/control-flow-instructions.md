@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Control Flow Instructions is a hardware concept that plays a defined role in a computer system.
+Control-flow instructions change which instruction address is executed next. They include branches, jumps, calls, returns, and sometimes traps or system transitions; exact categories depend on the ISA.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+A control-flow operation selects a target address instead of simply continuing to the sequential instruction. Calls and returns may also save or restore return state, while conditional branches depend on a condition.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Decode the operation and determine whether it is conditional.
+2. Compute or obtain the target and evaluate any condition.
+3. Follow the selected next PC; account for prediction and pipeline redirection separately.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A CPU implementing the control-flow operation and a valid target/condition are required. Target formation and privilege effects are ISA-specific.
 
 ### Representation
 
 ```text
-Control Flow Instructions
-    ↓
-System behavior
+current PC → condition / target selection → next PC
 ```

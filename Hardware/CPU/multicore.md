@@ -12,26 +12,26 @@
 
 ### What It Is
 
-Multicore is a hardware concept that plays a defined role in a computer system.
+A multicore processor contains two or more CPU cores in one package or integrated system. Each core can execute an instruction stream, while caches, memory controllers, and other resources may be private or shared.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+Multiple cores allow parallel threads to make progress concurrently when software and workload permit. They do not automatically speed up a serial task; synchronization and shared-resource contention also affect performance.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Determine how many cores are available to the operating system.
+2. Identify independent work that can run concurrently and coordinate shared data safely.
+3. Measure the workload, since scaling depends on parallelism and shared bottlenecks.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A multicore processor, suitable power/cooling, and software capable of using parallel execution are needed. Cache and interconnect topology vary.
 
 ### Representation
 
 ```text
-Multicore
-    ↓
-System behavior
+Thread A → Core 0 ┐
+Thread B → Core 1 ├→ shared / private cache and memory system
+Thread C → Core 2 ┘
 ```

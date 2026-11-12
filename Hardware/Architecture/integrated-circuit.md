@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Integrated Circuit is a hardware concept that plays a defined role in a computer system.
+An integrated circuit (IC) is a semiconductor die containing interconnected electronic devices—commonly transistors, resistors, and capacitors—fabricated together. It may be packaged alone or integrated into a larger multi-die package.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+The circuit implements a designed function, from a simple logic gate to a processor or memory. External pins or package connections provide power, clocks, signals, and communication with the rest of the system.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Identify the IC by its part number and datasheet.
+2. Match supply, pinout, timing, and interface requirements to the board.
+3. Use the documented peripheral circuits and operating limits when integrating it.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A fabricated die and package or other mounting method, suitable power, and compatible external interfaces are needed. Function and limits are device-specific.
 
 ### Representation
 
 ```text
-Integrated Circuit
-    ↓
-System behavior
+Transistors + interconnects → semiconductor die → package pins → board/system
 ```

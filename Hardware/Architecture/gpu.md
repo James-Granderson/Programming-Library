@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Gpu is a hardware concept that plays a defined role in a computer system.
+A graphics processing unit (GPU) is a processor optimized for parallel workloads, especially graphics and image operations. A discrete GPU is a separate device; an integrated GPU shares a processor package and often uses system memory.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+A GPU executes graphics or compute workloads through many execution lanes and associated scheduling, memory, and display logic. It complements rather than replaces the CPU, and capabilities vary by architecture and software interface.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Provide a workload through a graphics or compute API and select an available GPU device.
+2. Transfer or make input data accessible in the GPU's memory domain.
+3. Submit work, synchronize when results are needed, and present output through a display engine if applicable.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A compatible GPU, driver/runtime, and supported software API are required. Memory capacity and features vary by device; integrated GPUs may use shared RAM.
 
 ### Representation
 
 ```text
-Gpu
-    ↓
-System behavior
+CPU submits commands → GPU execution units ↔ GPU/system memory → rendered result
 ```

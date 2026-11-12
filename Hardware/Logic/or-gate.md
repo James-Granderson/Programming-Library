@@ -12,26 +12,28 @@
 
 ### What It Is
 
-Or Gate is a hardware concept that plays a defined role in a computer system.
+An OR gate produces 1 when at least one of its inputs is 1; it produces 0 only when all inputs are 0.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It combines conditions so that any asserted input can assert the output. The abstract function does not specify electrical behavior or delay.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Check whether any input is 1.
+2. Set the output to 1 if so; otherwise set it to 0.
+3. Check voltage levels and loading in the physical circuit.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+Compatible binary input levels and an OR-gate implementation are required.
 
 ### Representation
 
 ```text
-Or Gate
-    ↓
-System behavior
+A B | Y
+0 0 | 0
+0 1 | 1
+1 0 | 1
+1 1 | 1
 ```

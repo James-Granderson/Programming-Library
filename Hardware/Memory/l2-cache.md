@@ -12,26 +12,24 @@
 
 ### What It Is
 
-L2 Cache is a hardware concept that plays a defined role in a computer system.
+An L2 cache is a cache level between a core's L1 cache and a last-level cache or main memory. It is often larger and slower than L1; it may be private to a core or shared by a group of cores.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It can serve accesses missed by L1 and reduce traffic to more distant levels. L2 organization, inclusivity, and access path are processor-specific, not guaranteed by the label alone.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Follow an L1 miss into L2.
+2. Determine whether L2 hits or sends the request farther down the hierarchy.
+3. Consult the processor's topology to see which cores share this level.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A cache hierarchy containing an L2 level and a next-level service path are required. Size and sharing depend on the CPU.
 
 ### Representation
 
 ```text
-L2 Cache
-    ↓
-System behavior
+Core → L1 miss → L2 lookup → hit: data / miss: next level
 ```

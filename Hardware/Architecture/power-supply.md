@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Power Supply is a hardware concept that plays a defined role in a computer system.
+A computer power supply converts input electrical power into regulated DC output rails for system components. Desktop ATX units and laptop adapters differ in connectors and design, but both must meet the load's voltage and power requirements.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It supplies energy and provides protection and regulation within specified operating limits. The PSU does not determine system performance directly, though inadequate or faulty power can cause instability or shutdowns.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Choose a unit with the required form factor, connectors, and adequate rated capacity.
+2. Connect board, processor, graphics, and drive power as specified by their manuals.
+3. Keep ventilation clear and never open a PSU enclosure; internal capacitors can retain hazardous charge.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A compatible input source, correctly wired connectors, and sufficient capacity on required rails are needed. Ratings and protections vary by model.
 
 ### Representation
 
 ```text
-Power Supply
-    ↓
-System behavior
+AC input → conversion/regulation → DC rails → motherboard / CPU / GPU / drives
 ```

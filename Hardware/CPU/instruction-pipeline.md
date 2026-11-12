@@ -12,26 +12,27 @@
 
 ### What It Is
 
-Instruction Pipeline is a hardware concept that plays a defined role in a computer system.
+An instruction pipeline divides instruction execution into stages so different instructions can occupy different stages at once. Typical stages include fetch, decode, execute, memory access, and writeback, but actual pipelines vary.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+Overlapping independent instructions can increase throughput; pipelining does not necessarily reduce the latency of one instruction. Dependencies, branches, and resource conflicts can stall or flush work.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Follow several instructions across stages rather than treating one instruction as the entire pipeline.
+2. Mark dependencies and branch decisions that can delay progress.
+3. Distinguish instruction pipeline stages from a broader CPU/system data pipeline.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+Stage registers, control logic, and hazard handling are required. Stage count, names, issue width, and timing are implementation-specific.
 
 ### Representation
 
 ```text
-Instruction Pipeline
-    ↓
-System behavior
+Cycle →     1       2       3       4
+I1          Fetch   Decode  Execute Writeback
+I2                  Fetch   Decode  Execute
+I3                          Fetch   Decode
 ```

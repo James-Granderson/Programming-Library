@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Comparison Instructions is a hardware concept that plays a defined role in a computer system.
+Comparison instructions test a relation between operands, such as equality or ordering. In some ISAs, a compare is a distinct instruction; in others, a subtract-like operation sets flags and a branch or conditional operation consumes them.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+They determine condition information or a boolean result for subsequent control or data operations. Signed and unsigned ordering can differ, so the instruction's defined interpretation matters.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Determine the operand width and signed/unsigned interpretation.
+2. Evaluate the specified relation or flag effects.
+3. Follow the conditional instruction that uses the result, if any.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+Supported ISA instructions and valid operands are required. Flag behavior and compare forms are architecture-specific.
 
 ### Representation
 
 ```text
-Comparison Instructions
-    ↓
-System behavior
+A,B → compare (equal / less / greater) → condition result or flags
 ```

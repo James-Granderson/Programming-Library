@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Hard Disk Drive is a hardware concept that plays a defined role in a computer system.
+A hard-disk drive (HDD) stores data magnetically on rotating platters read and written by moving heads. It is a nonvolatile mechanical storage device, distinct from a solid-state drive.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+The controller positions a head over tracks and sectors and transfers data as the platter rotates. Seek and rotational delays make random access slower than solid-state access, while HDDs often offer high capacity at low cost.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Connect the drive using a supported interface and power connector.
+2. Initialize and format it with a filesystem before ordinary file use.
+3. Handle it as a mechanical device: avoid shock, monitor health, and keep backups.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A compatible controller/interface, power, mounting, and OS support are required. Capacity, speed, and sector format vary by model.
 
 ### Representation
 
 ```text
-Hard Disk Drive
-    ↓
-System behavior
+controller → head ⇄ magnetic sectors on rotating platter
 ```

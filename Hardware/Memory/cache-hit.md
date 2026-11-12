@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Cache Hit is a hardware concept that plays a defined role in a computer system.
+A cache hit occurs when a requested address is present in the relevant cache at a usable state. The hit test normally compares the address's tag with a selected cache entry and checks its valid/status bits.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+On a hit, the cache supplies the requested data without fetching that block from the next memory level. Latency and behavior depend on cache level and access type.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Split the address into index, tag, and offset as the cache design specifies.
+2. Check whether the selected entry is valid and its tag matches.
+3. On a hit, select the requested bytes or word using the offset.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A cache containing a valid matching line and a request that the cache can service are required.
 
 ### Representation
 
 ```text
-Cache Hit
-    ↓
-System behavior
+request address → index/tag lookup → valid tag match? yes → return cached data
 ```

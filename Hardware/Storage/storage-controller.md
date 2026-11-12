@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Storage Controller is a hardware concept that plays a defined role in a computer system.
+A storage controller manages communication between a host and one or more storage devices. It may be integrated into a drive, motherboard chipset, host bus adapter, or RAID adapter.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It interprets commands, schedules transfers, and handles device-specific operations; drive controllers also translate logical block addresses to physical media locations. RAID-capable controllers may add redundancy but are not required for ordinary storage.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Identify where the controller resides and which interface/protocol it supports.
+2. Follow a host read/write command through the controller to the device.
+3. Check driver, firmware, queue, and error-reporting behavior when troubleshooting.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A host interface, compatible controller firmware/driver, and supported device protocol are required. Features such as RAID and caching vary by controller.
 
 ### Representation
 
 ```text
-Storage Controller
-    ↓
-System behavior
+host command → storage controller → device command/media → completion/data
 ```

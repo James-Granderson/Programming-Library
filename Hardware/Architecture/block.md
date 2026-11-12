@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Block is a hardware concept that plays a defined role in a computer system.
+A block is a functional unit or a bounded group of components in a hardware design. The term is contextual: a block diagram may use it for a subsystem, while a memory system uses it for a fixed-size transfer or allocation unit.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+A block groups circuitry and interfaces so a larger design can be reasoned about in parts. Its inputs, outputs, and contract define how it interacts with neighboring blocks; the name alone does not specify a particular circuit.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Read the design context to determine whether ‘block’ means a subsystem or a fixed-size data unit.
+2. Identify its documented inputs, outputs, and neighboring interfaces.
+3. Trace an example transaction across the boundary and consult the detailed specification for implementation behavior.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A defined scope and interface are needed to make the word ‘block’ unambiguous. A block diagram is a documentation view, not a component.
 
 ### Representation
 
 ```text
-Block
-    ↓
-System behavior
+Producer ── interface/data ──► [ Functional block ] ──► Consumer
 ```

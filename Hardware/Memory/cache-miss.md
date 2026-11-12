@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Cache Miss is a hardware concept that plays a defined role in a computer system.
+A cache miss occurs when a cache cannot supply a requested address from a valid matching line. Misses are often described as compulsory, capacity, or conflict, though these categories are analytical rather than hardware events.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+The request is serviced by a lower cache or memory and may cause a line fill and replacement. Some misses overlap or are handled differently by prefetching, write policy, or coherence state.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Check tag and valid state for the requested set.
+2. Follow the request to the next level and identify whether a line fill is needed.
+3. Track victim selection, any writeback, and the returned data.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+The cache must have no usable matching entry for the request; servicing requires a reachable lower level or defined fault path.
 
 ### Representation
 
 ```text
-Cache Miss
-    ↓
-System behavior
+lookup → no valid tag match → next level fetch → line fill / victim replacement → data
 ```

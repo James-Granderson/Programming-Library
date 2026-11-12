@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Solid State Drive is a hardware concept that plays a defined role in a computer system.
+A solid-state drive (SSD) is a nonvolatile storage device built from semiconductor memory, commonly NAND flash, with a controller that presents a block-device interface. Unlike an HDD, it has no spinning platters or moving read/write heads.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+The controller maps logical block requests to flash, performs error correction and wear management, and may use caching. Random access is typically much faster than on an HDD, but performance and endurance vary by device and workload.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Check interface, form factor, capacity, and OS compatibility.
+2. Install and initialize the drive, then format it if it will hold files.
+3. Monitor health and maintain backups; avoid assuming all SSDs have the same endurance or sustained speed.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A compatible host interface, SSD controller, power, and OS driver support are required. NAND type, cache, performance, and endurance are model-specific.
 
 ### Representation
 
 ```text
-Solid State Drive
-    ↓
-System behavior
+host block request → SSD controller → NAND flash (mapping / ECC / wear management)
 ```

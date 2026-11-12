@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Flags is a hardware concept that plays a defined role in a computer system.
+CPU flags are architecturally visible or internal status bits that record conditions such as zero, carry, sign, or overflow. Which flags exist and which instructions update them depends on the ISA.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+A later conditional branch or instruction can test selected flags to choose an action. Flags are not a general-purpose register and are not universally produced by every arithmetic operation.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Check the ISA rule for which operation sets or preserves each flag.
+2. Evaluate the relevant status bit after the operation.
+3. Trace how a conditional instruction consumes that flag.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A processor and instruction set with the relevant status state and flag-consuming operations are required. Flag meanings are architecture-specific.
 
 ### Representation
 
 ```text
-Flags
-    ↓
-System behavior
+operation → status bits (Z, C, N, V, as defined) → conditional use
 ```

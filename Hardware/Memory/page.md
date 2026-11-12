@@ -12,26 +12,25 @@
 
 ### What It Is
 
-Page is a hardware concept that plays a defined role in a computer system.
+A memory page is a fixed-size unit of virtual memory managed by an operating system and memory-management hardware. The corresponding physical-memory unit is often called a frame; page size may vary and large pages are supported on many systems.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+Pages let the OS map virtual address ranges to physical frames, apply permissions, and move or reclaim memory in page-sized units. A page is not the same as a cache line or a disk sector.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Determine the page size and virtual address's page number and offset.
+2. Look up the mapping and permissions through the page table/TLB.
+3. Keep the offset when translating to the mapped physical frame.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+An OS and MMU supporting paging, page tables, and physical frames are required. Page sizes and mapping rules are architecture-specific.
 
 ### Representation
 
 ```text
-Page
-    ↓
-System behavior
+virtual address = page number | offset
+page-table mapping: page number → frame number; offset unchanged
 ```

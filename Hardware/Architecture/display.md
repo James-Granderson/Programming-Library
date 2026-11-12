@@ -12,26 +12,24 @@
 
 ### What It Is
 
-Display is a hardware concept that plays a defined role in a computer system.
+A display is an output device that presents images, text, or video. A computer display panel converts an incoming video signal into visible pixels; the GPU or display engine normally generates the signal, while the panel is not itself the graphics processor.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It receives a timed pixel stream or a negotiated digital display link, then drives its pixel elements and manages panel-specific functions. Resolution, refresh rate, color format, and link support constrain what can be shown.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Connect the display using a mutually supported interface.
+2. Select a supported resolution, refresh rate, and color mode in the system.
+3. Distinguish a blank signal or link problem from an application rendering problem.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+A display, a compatible video output/link, and appropriate power are needed. Supported modes depend on both source and display.
 
 ### Representation
 
 ```text
-Display
-    ↓
-System behavior
+Application → GPU/display engine → video link → Display panel → light
 ```

@@ -12,26 +12,26 @@
 
 ### What It Is
 
-Superscalar Execution is a hardware concept that plays a defined role in a computer system.
+Superscalar execution allows a CPU to issue or execute multiple instructions in one clock cycle using multiple execution resources. The achievable issue rate depends on instruction independence and the processor's width and resources.
 
 ### What It Does
 
-It helps the system store, move, process, or coordinate information as part of the larger hardware architecture.
+It increases potential instruction throughput for parallel instruction streams. Dependencies, branches, limited ports, and execution-unit availability can reduce actual work per cycle; it is not the same as multicore execution.
 
 ### How to Use
 
-1. Identify where the concept appears in the system.
-2. Understand how it interacts with adjacent components.
-3. Apply it during design, debugging, or performance analysis.
+1. Find independent instructions available at the same time.
+2. Map them to available issue slots and execution units.
+3. Compare within-core parallel issue with running threads on separate cores.
 
 ### Requirements
 
-A compatible hardware context.  // Provides the environment in which the concept is used.
+Multiple execution resources, issue logic, and dependency handling are required. Width and supported operation combinations are implementation-specific.
 
 ### Representation
 
 ```text
-Superscalar Execution
-    ↓
-System behavior
+one core, one cycle:  I1 → ALU 0
+                     I2 → ALU 1
+                     I3 waits if dependent
 ```
